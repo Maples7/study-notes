@@ -1,5 +1,10 @@
 # JavaScript
 
+## Basics
+
+- `undefined` 转换为数字为 `NaN`，`null`  转换为数字为 `0`。
+  - `null == undefined` 结果为 `true`
+
 ## Promise
 
 - 在 `new Promise(func)` 的 `func` 中，如果 `resolve` 和 `reject` 都一直不被调用，则这个被构造的 `Promise` 将永远处于 `Pending` 状态，这意味着这个 `Promise` 链中后续被链接上的 `Promise` 都将得不到执行。（程序不会因为死循环被挂起，后续的 `Promise` 链被存在了最先创建的 `Promise ` 的回调函数队列中，当状态变为 `resolved` 或 `rejected` 后再继续调用，但由于状态永远不改变，所以回调队列也永远不会被执行）
