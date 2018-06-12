@@ -16,6 +16,7 @@
   ```
 
   所以总是在这些算子执行完之后马上用 `list()` 将其转换成 `list` 是对于 Python 而言一个独特的良好的编码习惯。
+
   从上面的例子来说，可以改成：
 
   ```python
@@ -24,3 +25,7 @@
   for data_time in data_times:
       pass
   ```
+
+## Decorator
+
+- 使用 `functools.wraps` 来保留原始函数的 `__name__`、`__doc__ ` 以及参数列表等元信息
