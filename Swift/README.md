@@ -88,3 +88,5 @@
     When you assign a default value to a stored property, or set its initial value within an initializer, the value of that property is set directly, without calling any property observers.
 
 - For class instances, a constant property can be modified during initialization only by the class that introduces it. It can’t be modified by a subclass.
+
+- We don't use argument labels when calling a function through a variable that's of type function.
