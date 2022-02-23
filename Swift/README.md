@@ -90,3 +90,5 @@
 - For class instances, a constant property can be modified during initialization only by the class that introduces it. It can’t be modified by a subclass.
 
 - We don't use argument labels when calling a function through a variable that's of type function.
+
+- When we use `let` to declare a variable of type `struct`, we can NOT call its `mutating` members then. 
