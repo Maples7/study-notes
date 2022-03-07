@@ -92,3 +92,14 @@
 - We don't use argument labels when calling a function through a variable that's of type function.
 
 - When we use `let` to declare a variable of type `struct`, we can NOT call its `mutating` members then. 
+
+- Any attempt to set a property through optional chaining returns a value of type `Void?`, which enables you to compare against `nil` to see if the property was set successfully:
+
+    ```swift
+    if (john.residence?.address = someAddress) != nil {
+        print("It was possible to set the address.")
+    } else {
+        print("It was not possible to set the address.")
+    }
+    // Prints "It was not possible to set the address."
+    ```
